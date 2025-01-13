@@ -1,0 +1,128 @@
+:root {
+    --color-background: #121212;
+    --color-white: #FFFFFF;
+    --color-brown: #A0522D;
+    --font-primary: 'Montserrat', sans-serif;
+    --padding-large: 50px;
+    --padding-medium: 20px;
+    --padding-small: 10px;
+    --font-size-large: 40px;
+    --font-size-medium: 20px;
+}
+
+body {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-background);
+    color: var(--color-white);
+    line-height: 1.6;
+}
+
+main {
+    padding: var(--padding-large) var(--padding-medium);
+    background-color: var(--color-background);
+}
+
+.titulo-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding: var(--padding-large) var(--padding-medium); 
+    max-width: 800px;
+}
+
+h1 {
+    font-weight: 800; 
+    font-size: var(--font-size-large); 
+    color: var(--color-white);
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: var(--color-brown);
+    text-decoration-thickness: 20%;
+    text-underline-offset: 5px;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: var(--font-size-medium);
+    margin-top: var(--padding-small);
+}
+
+a {
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-brown);
+    
+}
+
+.texto-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    max-width: 600px;
+    padding-left: 100px;
+    
+}
+
+p {
+    font-size: var(--font-size-medium);
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .body{
+        overflow:auto; 
+    }
+
+    .titulo-about,
+    .texto-about {
+        margin-top: 10px;
+        max-width: 100%;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h4, p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+
+    body {
+        overflow: scroll;
+        max-height: 100vh;
+    }
+    
+    main {
+        overflow: scroll;
+        max-height: 90vh;
+    }
+    
+    h1 {
+        font-size: 1.5rem;
+        margin-top: 25px;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    h4 {
+        font-size: 0.9rem;
+        margin-top: 0px;
+    }
+
+    .titulo-about,
+    .texto-about {
+        padding: var(--padding-small);
+    }
+}

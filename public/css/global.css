@@ -1,0 +1,82 @@
+:root{
+    --font-primary: "Montserrat", sans-serif;
+    --font-secondary: Arial, sans-serif;
+    --color-black: black;
+    --color-white: white;
+    --color-background: rgb(48, 47, 47);
+    --color-brown: #CD853F;
+}
+
+body {
+    font-family: var(--font-primary);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--color-black);
+    padding: 20px;
+    position: fixed;
+    width: 100%;  
+}
+
+nav {
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-size: 20px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    text-decoration-color: var(--color-brown);
+    text-decoration-thickness: 20%;
+    text-underline-offset: 5px;  
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--color-white);
+    transition: color 0.3s ease;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+    text-decoration-color: var(--color-brown);
+    text-decoration-thickness: 20%;
+    text-underline-offset: 5px;  
+    color:  var(--color-white);
+}
+
+
+main{
+    min-height: 100vh;
+}
+
+footer {
+    background-color: transparent;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.logos{
+    margin: 0 0 2px 30px;
+    width: 20px;
+}

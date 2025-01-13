@@ -1,0 +1,174 @@
+main{
+    background-color: var(--color-background);
+}
+
+body{
+    overflow: auto;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.technical-skill, .languages, .education{
+    font-family: "Montserrat", sans-serif;
+    color: var(--color-white);
+    padding-top: 70px;
+    padding-left: 115px;
+    
+}
+
+h1{
+    font-weight: 200;
+    color: var(--color-white);
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-decoration:underline;
+    text-decoration-color: var(--color-brown);
+    text-decoration-thickness: 20%;
+    text-underline-offset: 5px; 
+}
+
+.technical-skill a {
+    display: flex;
+    align-items: center;
+    text-decoration: none; 
+    color: var(--color-white);
+    padding-bottom: 10px;
+}
+
+.technical-skill img.logos {
+    margin-right: 20px;
+    width: 50px;
+}
+
+.education{
+    color: var(--color-white);
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 40px;
+}
+
+h2{
+    font-weight: 200;
+    color: var(--color-white);
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h3{
+    font-weight: 200;
+    color: var(--color-white);
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.technical-skill {
+    animation-delay: 0.5s;
+}
+
+.languages{
+    animation-delay: 2.5s; 
+}
+
+.education{
+    animation-delay: 4.5s; 
+}
+
+.technical-skill h1, .languages h1, .education h1,
+.technical-skill h2, .languages h2, .education h2,
+.technical-skill h3, .education h3,
+.technical-skill a, .languages a, .education a {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s forwards;
+}
+
+.technical-skill a:nth-child(2) { animation-delay: 1s; }
+.technical-skill a:nth-child(3) { animation-delay: 1.5s; }
+.technical-skill a:nth-child(4) { animation-delay: 2s; }
+.technical-skill a:nth-child(5) { animation-delay: 2.5s; }
+.technical-skill a:nth-child(6) { animation-delay: 3s; }
+.technical-skill a:nth-child(7) { animation-delay: 3.5s; }
+.technical-skill a:nth-child(8) { animation-delay: 4s; }
+.technical-skill a:nth-child(9) { animation-delay: 4.5s; }
+.technical-skill a:nth-child(10) { animation-delay: 5s; }
+
+
+.technical-skill h2:nth-of-type(1) { animation-delay: 6s; }
+.technical-skill h2:nth-of-type(2) { animation-delay: 10s; }
+.languages h2:nth-of-type(1) { animation-delay: 6s; }
+.education h2:nth-of-type(1) { animation-delay: 7s;}
+
+.education h3:nth-of-type(1) { animation-delay: 8s; }
+
+.technical-skill h1 { animation-delay: 0.5s; }
+.languages h1 { animation-delay: 0.5s; }
+.education h1 { animation-delay: 0.5s; }
+
+@keyframes fadeInSection {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; 
+        align-items: center;
+        gap: 20px; 
+        padding: 20px;
+    }
+
+    .technical-skill, .languages, .education {
+        padding-left: 20px; 
+        padding-right: 20px;
+        padding-top: 30px; 
+        min-width: 100%; 
+    }
+
+    h1 {
+        font-size: 24px; 
+        text-decoration-thickness: 15%; 
+    }
+
+    h2 {
+        font-size: 22px; 
+    }
+
+    h3 {
+        font-size: 18px; 
+    }
+
+    .technical-skill, .languages, .education {
+        animation: fadeInUp 0.5s ease-out forwards;
+    }
+
+    .technical-skill h1, .languages h1, .education h1,
+    .technical-skill h2, .languages h2, .education h2,
+    .technical-skill h3, .education h3,
+    .technical-skill a, .languages a, .education a {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+
+  
+    .technical-skill a, .languages a, .education a {
+        padding-bottom: 5px;
+    }
+
+    .technical-skill img.logos {
+        width: 40px; 
+    }
+}
