@@ -1,9 +1,21 @@
 main{
-    background-color: var(--color-background);
+    /* background-color: var(--color-background); */
+
+    padding: var(--padding-large) var(--padding-medium);
+    /* background: linear-gradient(135deg, rgba(0, 0, 0, 1) 20%, rgba(50, 50, 50, 0.8) 50%, rgba(128, 128, 128, 0.5) 80%); */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    color: white; 
+    background:linear-gradient(90deg, #000000 0%, #434343 100%) ;
+
+    
 }
 
 body{
     overflow: auto;
+    overflow-x: hidden;
 }
 
 section{

@@ -14,14 +14,22 @@ body {
     font-family: var(--font-primary);
     margin: 0;
     padding: 0;
-    background-color: var(--color-background);
+    /* background-color: var(--color-background); */
     color: var(--color-white);
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 main {
     padding: var(--padding-large) var(--padding-medium);
-    background-color: var(--color-background);
+    background-image: url(/imgs/aboutfundo.jpg);
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    
+
+
 }
 
 .titulo-about {
@@ -29,8 +37,8 @@ main {
     flex-direction: column;
     justify-content: flex-start; 
     align-items: flex-start; 
-    padding: var(--padding-large) var(--padding-medium); 
     max-width: 800px;
+    padding: 35px;
 }
 
 h1 {
